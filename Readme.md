@@ -25,13 +25,13 @@ go run .
 # Usage
 The application uses environment variables for configuration. The following environment variables are required:
 
-- `VC_HOST``: The vCenter host.
-- `VC_USER``: The vCenter username.
-- `VC_PASSWORD``: The vCenter password.
-- `PORT``: The port on which the application will run.
+- `VC_HOST`: The vCenter host.
+- `VC_USER`: The vCenter username.
+- `VC_PASSWORD`: The vCenter password.
+- `PORT`: The port on which the application will run.
 The application also accepts the following flags:
 
-- `-tls`: Enable TLS. Default is `false``.
+- `-tls`: Enable TLS. Default is `false`.
 
 ## Controllers
 The application has a Prometheus controller defined in controller/prom.go. This controller handles the /prom endpoint and is responsible for returning the JSON for Prometheus file service discovery.
